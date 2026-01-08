@@ -24,4 +24,33 @@ make clean && make
 ## Использование
 1. Запустите converter.exe, выберите .gif и аудиофайлы
 2. Поместите animation.dat, sound.wav, config.ini файлы в папку с плеером, рядом с EBOOT.PBP файлом
-3. Наслаждайтесь =)
+3. Запустите =)
+
+# ТЕХНИЧЕСКАЯ ИНФОРМАЦИЯ
+
+## Конфиг `config.ini`, описание
+
+```ini
+[Animation]
+File = animation.dat # Путь к файлу с анимацией
+
+[Audio]
+File = sound.wav # Путь к аудиофайлу
+Volume = 100 # Громкость
+
+[Display]
+FrameDelay = 3  # Меньше = быстрее
+Loop = 1        # 1 - зациклить, 0 - проиграть анимацию один раз
+```
+
+## **Формат .dat файла:**
+```
+[Header - 8 bytes]
+- frame_count: 4 bytes
+- width:       2 bytes
+- height:      2 bytes
+
+[Data]
+- Кадры последовательно
+- Каждая строка → null-терминатор
+```
