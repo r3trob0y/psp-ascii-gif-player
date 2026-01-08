@@ -4,6 +4,8 @@
 ![PSP](https://img.shields.io/badge/Platform-PSP-orange.svg)
 ![Python](https://img.shields.io/badge/Python-3.8+-green.svg)
 
+![От так на PSP](example.png)
+
 ## Как собрать?
 1. Установите PSPSDK как [указано в инструкции](https://pspdev.github.io/installation.html).
 2. Склонируйте в целевую папку репозиторий при помощи команды:
